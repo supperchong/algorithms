@@ -1,6 +1,5 @@
 function merge_sort(arr,p=0,q=arr.length-1){
-	console.log('p',p)
-	console.log('q',q)
+	
 	if(q-p==1){
 		if(arr[p]>arr[q])
 			[arr[p],arr[q]]=[arr[q],arr[p]]
