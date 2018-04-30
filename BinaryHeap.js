@@ -41,11 +41,22 @@ class BinaryHeap{
             this.maxHeapify(i)
         }
     }
+    heapSort(){
+        let sortArr=[]
+        
+        while(this.arr.length){
+            this.buildMaxHeap()
+            sortArr.push(this.arr[0])
+            this.arr[0]=this.arr[this.arr.length-1]
+            this.arr.length--
+        }
+        return sortArr
+    }
     print(){
         console.log(this.arr)
     }
 }
-
+module.exports=BinaryHeap
 
 //test
 /*
